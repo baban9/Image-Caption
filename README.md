@@ -1,2 +1,34 @@
-# Image-Caption
-Relating words to an image is a major goal in image captioning. While recent technological advances has enabled us to generate description learning from the huge corpus of words, however, more often than not we fall short of words when it comes to convey message through an image. Through this paper we are targeting to find a reasonable ground in generating customized and personalized captions after learning features of an image and generating captions. While the success of these methods is encouraging, they all share one key limitation: detail. By only describing images with a single high-level sentence, there is a fundamental upper-bound on the quantity and quality of information approaches can produce. In particular, we are interested in the generating longer, richer sentences and paragraphs that could convey a story/message rather than description of image. In this paper we explore and summaries few of the existing state-of-art techniques for image captioning and image paragraph captioning using the novel data from the Instagram. We explore standard MLE based Encoder-Decoder architecture for captioning, Hierarchical RNNs for paragraph captioning, and another less explored approach based on Conditional Generative Adversarial Networks.
+# Image Captioning (Deep Learning)
+
+Academic analysis of deep learning approaches to automatic image captioning. Documents model architectures, evaluation metrics, and literature review.
+
+## Problem
+
+Generate natural language descriptions of images using neural encoder-decoder architectures.
+
+## Current state
+
+This repository contains the written analysis (`Image Caption - Deep Learning Approach.pdf`). Runnable training and inference code is planned as a follow-up.
+
+## Approach (documented)
+
+- CNN encoder for visual features
+- RNN/LSTM or attention-based decoder for caption generation
+- BLEU and qualitative evaluation against reference captions
+
+## Reproducibility
+
+No executable pipeline yet. For related runnable work see:
+
+- [Personal-Projects](https://github.com/baban9/Personal-Projects) (CV and NLP notebooks)
+- [Machine-and-Influence-learning](https://github.com/baban9/Machine-and-Influence-learning)
+
+## Tech stack (planned)
+
+Python, PyTorch, COCO or Flickr8k dataset
+
+## Next steps
+
+1. Implement Show-and-Tell or attention-based captioning baseline
+2. Add training script, evaluation metrics, and sample inference notebook
+3. Pin dependencies and publish model checkpoints
